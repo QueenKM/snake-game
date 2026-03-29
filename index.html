@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Snake</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="app">
+      <section class="panel">
+        <header class="hud">
+          <div>
+            <p class="label">Score</p>
+            <p class="value" id="score">0</p>
+          </div>
+          <div>
+            <p class="label">Best</p>
+            <p class="value" id="best-score">0</p>
+          </div>
+          <div class="status-wrap">
+            <p class="label">Status</p>
+            <p class="value status" id="status">Ready</p>
+          </div>
+        </header>
+
+        <div class="board-shell">
+          <div
+            id="board"
+            class="board"
+            aria-label="Snake game board"
+            role="grid"
+          ></div>
+        </div>
+
+        <div class="actions">
+          <button id="pause-button" type="button">Pause</button>
+          <button id="restart-button" type="button">Restart</button>
+        </div>
+
+        <section class="controls" aria-label="On-screen controls">
+          <button type="button" data-direction="up" aria-label="Move up">Up</button>
+          <div class="controls-row">
+            <button type="button" data-direction="left" aria-label="Move left">Left</button>
+            <button type="button" data-direction="down" aria-label="Move down">Down</button>
+            <button type="button" data-direction="right" aria-label="Move right">Right</button>
+          </div>
+        </section>
+
+        <p class="help">
+          Use arrow keys or WASD to move. Press space to pause and Enter to restart after game over.
+        </p>
+      </section>
+    </main>
+
+    <script type="module" src="./src/main.js"></script>
+  </body>
+</html>
