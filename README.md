@@ -2,6 +2,10 @@
 
 A polished browser-based take on the classic Snake game, built as a lightweight static web app with vanilla JavaScript.
 
+## Live Demo
+
+Play it here: [queenkm.github.io/snake-game](https://queenkm.github.io/snake-game/)
+
 ## Overview
 
 This project focuses on the core Snake gameplay loop:
