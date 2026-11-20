@@ -47,10 +47,13 @@ The implementation keeps the game logic separated from rendering so the behavior
 
 ## Run Locally
 
-You can run the project in either of these ways:
+From the repository root, start a local HTTP server:
 
-1. Open `index.html` directly in your browser.
-2. Serve the repository root with any static file server and open the root page.
+```bash
+python3 -m http.server 8000
+```
+
+Open http://localhost:8000/ in your browser. The game uses JavaScript modules, so it needs to be served over HTTP.
 
 ## Controls
 
